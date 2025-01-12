@@ -1,4 +1,4 @@
-package lombok.field_defaults;
+package ru.codreview.lombok.field_defaults;
 
 import lombok.AccessLevel;
 import lombok.SneakyThrows;
@@ -10,7 +10,7 @@ import java.util.function.IntPredicate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+//меняем модификаторы полей
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class FieldDefaultsExample {
     String one;

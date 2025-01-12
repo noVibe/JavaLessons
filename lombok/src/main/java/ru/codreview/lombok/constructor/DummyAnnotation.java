@@ -1,4 +1,4 @@
-package lombok.constructor;
+package ru.codreview.lombok.constructor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

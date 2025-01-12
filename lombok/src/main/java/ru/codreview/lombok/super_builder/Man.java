@@ -1,10 +1,10 @@
-package lombok.super_builder;
+package ru.codreview.lombok.super_builder;
 
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 
-@SuperBuilder
+@SuperBuilder //даем возможность "протянуть" билдер в наследника
 public class Man {
     int age;
     String name;

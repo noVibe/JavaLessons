@@ -1,4 +1,4 @@
-package lombok.super_builder;
+package ru.codreview.lombok.super_builder;
 
 import java.util.Set;
 

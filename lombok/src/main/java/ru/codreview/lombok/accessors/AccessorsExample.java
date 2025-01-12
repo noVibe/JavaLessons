@@ -1,4 +1,4 @@
-package lombok.accessors;
+package ru.codreview.lombok.accessors;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,6 +6,7 @@ import lombok.experimental.Accessors;
 
 @Getter
 @Setter
+//setter возвращает this вместо void; getter и setter теперь без префиксов
 @Accessors(fluent = true)
 public class AccessorsExample {
 
@@ -14,7 +15,8 @@ public class AccessorsExample {
 
     public static void main(String[] args) {
         AccessorsExample example = new AccessorsExample();
-        example.stringField("s")
-                .intField(1);
+        example.intField(1)
+                .stringField("s");
+
     }
 }

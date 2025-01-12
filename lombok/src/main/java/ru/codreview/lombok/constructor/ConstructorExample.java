@@ -1,11 +1,11 @@
-package lombok.constructor;
+package ru.codreview.lombok.constructor;
 
 import lombok.AllArgsConstructor;
 
 import java.lang.annotation.Annotation;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+//добавляем к конструктору дополнительные аннотации
 @AllArgsConstructor(onConstructor_ = {
         @DummyAnnotation,
         @DummyParameterAnnotation("param"),

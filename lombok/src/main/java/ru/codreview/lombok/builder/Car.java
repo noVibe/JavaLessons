@@ -1,4 +1,4 @@
-package lombok.builder;
+package ru.codreview.lombok.builder;
 
 import lombok.Builder;
 import lombok.Singular;
@@ -6,15 +6,16 @@ import lombok.ToString;
 
 import java.util.List;
 
-@Builder
+@Builder //реализация паттерна билдер
 @ToString
 public class Car {
     String color;
     String plate;
     int maxSpeed;
-    @Singular
+    @Singular //позволяет добавлять элементы поштучно
     List<String> drivers;
 
+    //переопределяем методы билдера
     static class CarBuilder {
         CarBuilder color(String color) {
             this.color = color + " custom";
