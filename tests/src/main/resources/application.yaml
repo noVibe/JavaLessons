@@ -1,0 +1,23 @@
+spring:
+  application.name: tests
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    driver-class-name: org.h2.Driver
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 10
+      pool-name: CodeReviewPool
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
